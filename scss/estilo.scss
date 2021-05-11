@@ -1,0 +1,734 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+@import "color";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color:$green;
+   /* overflow: hidden*/
+   overflow-x: hidden;
+
+}
+
+.movil{
+    display: none;
+}
+
+.container-tips{
+    margin: 30px 0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 5000fr);
+    grid-gap: 10px;
+   }
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$green' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$green' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.tip{
+    font-size: 12px;
+    color: $Yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    
+}
+
+.img{
+    width: 100%;
+    
+}
+
+
+.us-title{
+    font-size: 41px;
+    font-family: 'Ultra', serif;
+    color: $Yellow;
+    padding: 50px 60px 70px;
+   
+    
+}
+
+
+.background{
+    width: 10%;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 10px 30px;
+ 
+    
+}
+
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__texts{
+    color: $Yellow;
+}
+
+
+
+.about__img--left{
+    text-align: left;
+}
+
+
+.about__picture{
+    max-width: 80%;
+    position: relative;
+    bottom: 50px;
+    border-radius: 5%;
+    border: solid  $Yellow;
+    
+}
+
+
+.subtitle{
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 0px 30px 30px;
+    font-size: 37px;
+    position: relative;
+    right: 50px;
+}
+
+.about__paragraph{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    position: relative;
+    right: 50px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#title{
+    display: none;
+    
+   }
+
+   .vermas{
+       padding: 20px;
+   }
+
+ 
+  .copy {
+      
+    font-size: 25px; 
+    position: relative;
+    left: 10px;
+    top: 20px;
+     
+    }
+  
+  .sociales {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 500px;
+    bottom: 40px;
+    
+
+}
+  
+
+    .footer{      
+        background: $Yellow;
+    }
+  
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+
+
+
+ @media (min-width: 320px) and (max-width: 480px) and (orientation:portrait) {
+    
+ 
+    .desk{
+        display: none;
+    }
+    .movil{
+        display: inline-block;
+    }
+    html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+    .container-tips{
+    margin: 30px 0px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 5000fr);
+    grid-gap: 10px;
+    
+   }
+   .tip{
+    font-size: 8px;
+    color: $Yellow;
+    padding: 10px;
+    
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+   
+
+
+
+
+
+    .us-title{
+        font-size: 30px;
+        position: relative;
+        right: 20px;
+    }
+    .subtitle{
+        font-size: 18px; 
+        position: relative;
+        right: 0px;   
+        bottom: 80px;   
+    }
+
+    .about__paragraph{
+        font-size: 14px;
+        bottom: 70px;
+        right: 0px;         
+    }
+     
+    .about{
+        min-height: 100px;
+        display: grid;
+        grid-template-columns: 1fr  ;
+        row-gap: 60px;
+        justify-items: right;
+        align-items: right;
+        object-fit: cover;
+        object-position: center top;
+    }
+    
+    .about__texts{
+        color: $Yellow;
+    }
+    
+    
+    
+    .about__img--left{
+        text-align: left;
+    }
+    
+
+  #mostrarTitulo{
+      font-size: 12px;
+      position: relative;
+      bottom: 70px;
+  }
+  #title{
+      font-size: 14px;
+      position: relative;
+      bottom: 80px;
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  
+  .copy {
+      
+    font-size: 14px; 
+    position: relative;
+    left: 10px;
+    top: 20px;
+     
+    }
+  
+  .sociales {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 9px;
+    bottom: 30px;
+    
+
+}
+  
+  
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+
+
+
+    }
+    
+    
+
+    
+ @media (min-width: 481px) and (max-width: 767px) and (orientation:portrait) {
+
+    
+    .body{ overflow-x: hidden;
+
+    }
+    .us-title{
+        font-size: 30px;
+        position: relative;
+        right: 20px;
+    }
+    .subtitle{
+        font-size: 18px; 
+        position: relative;
+        right: 0px;   
+        bottom: 80px;   
+    }
+
+    .about__paragraph{
+        font-size: 14px;
+        bottom: 70px;
+        right: 0px;         
+    }
+     
+    .about{
+        min-height: 100px;
+        display: grid;
+        grid-template-columns: 1fr  ;
+        row-gap: 60px;
+        justify-items: right;
+        align-items: right;
+        object-fit: cover;
+        object-position: center top;
+    }
+    
+       
+ 
+  #mostrarTitulo{
+      font-size: 10px;
+      position: relative;
+      bottom: 70px;
+  }
+  #title{
+      font-size: 14px;
+      position: relative;
+      bottom: 80px;
+      font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  
+  .copy {
+      
+    font-size: 14px; 
+    position: relative;
+    left: 10px;
+    top: 20px;
+     
+    }
+  
+  .sociales {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 0px;
+    bottom: 30px;
+    
+
+}
+  
+  
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        z-index:100;
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+
+
+
+    }
+    
+
+
+
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+        .copy {
+      
+            font-size: 14px; 
+            position: relative;
+            left: 10px;
+            top: 20px;
+             
+            }
+          
+          .sociales {
+            width: 40%;
+            text-align: center;
+            position: relative;
+            right: 180px;
+            bottom: 30px;
+            
+        
+        }         
+         
+            .whatsapp {
+                position:fixed;
+                width:60px;
+                height:60px;
+                bottom:40px;
+                right:40px;
+                background-color:#25d366;
+                color:#FFF;
+                border-radius:50px;
+                text-align:center;
+                font-size:30px;
+                z-index:100;
+              }
+              
+              .whatsapp-icon {
+                margin-top:13px;
+              }
+
+    }
+
+    
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .copy {
+      
+        font-size: 18px; 
+        position: relative;
+        left: 10px;
+        top: 20px;
+         
+        }
+      
+      .sociales {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+        
+    
+    }   
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+}
+
+
+@media (min-width: 1281px) {
+    .copy {
+      
+        font-size: 18px; 
+        position: relative;
+        left: 10px;
+        top: 20px;
+         
+        }
+      
+      .sociales {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        right: 180px;
+        bottom: 30px;
+        
+    
+    }   
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+}
+
+@media (min-width: 521px) and (max-width: 767px){
+
+    .us-title{
+        font-size: 26px;
+        position: relative;
+        right: 0px;
+    }
+    .subtitle{
+        font-size: 18px; 
+        position: relative;
+        right: 0px;   
+        bottom: 0px;   
+    }
+
+    .about__paragraph{
+        font-size: 13px;
+        bottom: 0px;
+        right: 0px;         
+    }
+    #mostrarTitulo{
+        font-size: 8px;
+        position: relative;
+        bottom: 0px;
+    }
+    #title{
+        font-size: 13px;
+        position: relative;
+        bottom: 0px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    .copy {
+      
+        font-size: 18px; 
+        position: relative;
+        left: 10px;
+        top: 20px;
+         
+        }
+      
+      .sociales {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+        
+    
+    }   
+    .whatsapp {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        
+      }
+      
+      .whatsapp-icon {
+        margin-top:13px;
+      }
+
+}
+/*
+@media (min-width: 320px) and (max-width: 480px) and (orientation:portrait){
+    .us-title{
+        font-size: 26px;
+        position: relative;
+        right: 0px;
+    }
+    .subtitle{
+        font-size: 18px; 
+        position: relative;
+        right: 0px;   
+        bottom: 0px;   
+    }
+
+    .about__paragraph{
+        font-size: 13px;
+        bottom: 0px;
+        right: 0px;         
+    }
+    #mostrarTitulo{
+        font-size: 8px;
+        position: relative;
+        bottom: 0px;
+    }
+    #title{
+        font-size: 13px;
+        position: relative;
+        bottom: 0px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+  
+    .copy {
+      
+        font-size: 14px; 
+        position: relative;
+        left: 10px;
+        top: 20px;
+         
+        }
+      
+      .sociales {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+        
+    
+    }
+      
+      
+        .whatsapp {
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            z-index:100;
+          }
+          
+          .whatsapp-icon {
+            margin-top:13px;
+          }
+    
+    
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation:portrait){
+     .us-title{
+        font-size: 26px;
+        position: relative;
+        right: 0px;
+    }
+    .subtitle{
+        font-size: 18px; 
+        position: relative;
+        right: 0px;   
+        bottom: 0px;   
+    }
+
+    .about__paragraph{
+        font-size: 13px;
+        bottom: 0px;
+        right: 0px;         
+    }
+    #mostrarTitulo{
+        font-size: 8px;
+        position: relative;
+        bottom: 0px;
+    }
+    #title{
+        font-size: 13px;
+        position: relative;
+        bottom: 0px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+  
+    .copy {
+      
+        font-size: 14px; 
+        position: relative;
+        left: 10px;
+        top: 20px;
+         
+        }
+      
+      .sociales {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: 0px;
+        bottom: 30px;
+        
+    
+    }
+      
+      
+        .whatsapp {
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            z-index:100;
+          }
+          
+          .whatsapp-icon {
+            margin-top:13px;
+          }
+    
+
+}
+*/
